@@ -15,7 +15,6 @@ public class ClosestPairTest {
                 double dx = pts[i][0] - pts[j][0];
                 double dy = pts[i][1] - pts[j][1];
                 double d = Math.sqrt(dx * dx + dy * dy);
-
                 if (d < min) min = d;
             }
         }

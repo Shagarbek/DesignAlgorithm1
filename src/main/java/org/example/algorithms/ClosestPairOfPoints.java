@@ -46,6 +46,7 @@ public class ClosestPairOfPoints {
             }
 
             return minDist;
+
         } finally {
             metrics.end();
         }
