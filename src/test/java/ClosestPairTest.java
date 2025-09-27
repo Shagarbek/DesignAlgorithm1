@@ -1,6 +1,7 @@
 import org.example.Metrics;
 import org.example.algorithms.ClosestPairOfPoints;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.Random;
 
@@ -20,6 +21,7 @@ public class ClosestPairTest {
         }
         return min;
     }
+
     @Test
     public void testClosestPairSmall() {
         int[] sizes = {100, 500, 2000};
@@ -40,7 +42,6 @@ public class ClosestPairTest {
         double fast = ClosestPairOfPoints.minDistance(copyPoints(pts), m);
         assertTrue(Double.isFinite(fast) && fast >= 0, "Closest distance should be non-negative finite");
     }
-
     private double[][] randomPoints(int n) {
         double[][] pts = new double[n][2];
         for (int i = 0; i < n; i++) {
@@ -49,6 +50,7 @@ public class ClosestPairTest {
         }
         return pts;
     }
+
     private double[][] copyPoints(double[][] pts) {
         double[][] cp = new double[pts.length][2];
         for (int i = 0; i < pts.length; i++) {
