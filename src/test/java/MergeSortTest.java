@@ -3,6 +3,7 @@ import org.example.algorithms.MergeSort;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
+
 // testing merge sort
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
