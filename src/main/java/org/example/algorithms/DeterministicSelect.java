@@ -49,18 +49,15 @@ public class DeterministicSelect {
             insertionSort(arr, start, end, metrics);
             return arr[start + length / 2];
         }
-
         int numGroups = (int) Math.ceil((double) length / 5);
         int[] medians = new int[numGroups];
         metrics.incAlloc(numGroups);
-
         for (int i = 0; i < numGroups; i++) {
             int gStart = start + i * 5;
             int gEnd = Math.min(gStart + 4, end);
             insertionSort(arr, gStart, gEnd, metrics);
             medians[i] = arr[gStart + (gEnd - gStart) / 2];
         }
-
         return select(medians, (numGroups + 1) / 2, 0, numGroups - 1, metrics);
     }
 
@@ -88,6 +85,7 @@ public class DeterministicSelect {
                 i++;
             }
         }
+
         swap(arr, i, end);
         return i;
     }

@@ -1,5 +1,6 @@
 import org.example.Metrics;
 import org.example.algorithms.DeterministicSelect;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -23,8 +24,10 @@ public class DeterministicSelectTest {
 
             int k = rnd.nextInt(n) + 1;
             Metrics m = new Metrics();
+
             int pick = sel.select(Arrays.copyOf(a, a.length), k, m);
             int expected = sorted[k - 1];
+
             assertEquals(expected, pick, String.format("Select mismatch on trial %d (k=%d)", t, k));
         }
     }
