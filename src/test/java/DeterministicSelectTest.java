@@ -19,8 +19,10 @@ public class DeterministicSelectTest {
             int[] a = rnd.ints(n, 0, 1000).toArray();
             int[] sorted = Arrays.copyOf(a, a.length);
             Arrays.sort(sorted);
+
             int k = rnd.nextInt(n) + 1;
             Metrics m = new Metrics();
+
             int pick = sel.select(Arrays.copyOf(a, a.length), k, m);
             int expected = sorted[k - 1];
 

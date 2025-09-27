@@ -1,6 +1,5 @@
 package org.example.algorithms;
 import org.example.Metrics;
-
 public class DeterministicSelect {
 
     public int select(int[] arr, int k, Metrics metrics) {
@@ -33,6 +32,7 @@ public class DeterministicSelect {
             } else {
                 return select(arr, k - order, pivotIndex + 1, end, metrics);
             }
+
         } finally {
             metrics.end();
         }
@@ -44,7 +44,6 @@ public class DeterministicSelect {
             insertionSort(arr, start, end, metrics);
             return arr[start + length / 2];
         }
-
         int numGroups = (int) Math.ceil((double) length / 5);
         int[] medians = new int[numGroups];
         metrics.incAlloc(numGroups);
@@ -70,7 +69,6 @@ public class DeterministicSelect {
             arr[j + 1] = key;
         }
     }
-
     private int partition(int[] arr, int start, int end, Metrics metrics) {
         int pivot = arr[end];
         int i = start;
@@ -84,6 +82,7 @@ public class DeterministicSelect {
         swap(arr, i, end);
         return i;
     }
+
 
     private void swap(int[] arr, int i, int j) {
         int tmp = arr[i];
