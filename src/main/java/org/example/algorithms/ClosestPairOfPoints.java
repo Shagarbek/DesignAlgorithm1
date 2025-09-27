@@ -30,7 +30,6 @@ public class ClosestPairOfPoints {
             double dl = minDistUtil(points, left, mid, metrics);
             double dr = minDistUtil(points, mid, right, metrics);
             double d = Math.min(dl, dr);
-
             List<double[]> strip = new ArrayList<>();
             for (int i = left; i < right; i++) {
                 if (Math.abs(points[i][0] - midX) < d) {
@@ -45,7 +44,6 @@ public class ClosestPairOfPoints {
                     minDist = Math.min(minDist, distance(strip.get(i), strip.get(j), metrics));
                 }
             }
-
             return minDist;
         } finally {
             metrics.end();
