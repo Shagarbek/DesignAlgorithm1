@@ -27,7 +27,6 @@ public class ClosestPairOfPoints {
 
             int mid = (left + right) / 2;
             double midX = points[mid][0];
-
             double dl = minDistUtil(points, left, mid, metrics);
             double dr = minDistUtil(points, mid, right, metrics);
             double d = Math.min(dl, dr);
@@ -38,7 +37,6 @@ public class ClosestPairOfPoints {
                     strip.add(points[i]);
                 }
             }
-
             strip.sort(Comparator.comparingDouble(p -> p[1]));
 
             double minDist = d;
@@ -47,7 +45,9 @@ public class ClosestPairOfPoints {
                     minDist = Math.min(minDist, distance(strip.get(i), strip.get(j), metrics));
                 }
             }
+
             return minDist;
+
         } finally {
             metrics.end();
         }

@@ -1,5 +1,6 @@
 import org.example.Metrics;
 import org.example.algorithms.ClosestPairOfPoints;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,9 +14,11 @@ public class ClosestPairTest {
         double min = Double.MAX_VALUE;
         for (int i = 0; i < pts.length; i++) {
             for (int j = i + 1; j < pts.length; j++) {
+
                 double dx = pts[i][0] - pts[j][0];
                 double dy = pts[i][1] - pts[j][1];
                 double d = Math.sqrt(dx * dx + dy * dy);
+
                 if (d < min) min = d;
             }
         }
@@ -51,7 +54,6 @@ public class ClosestPairTest {
         }
         return pts;
     }
-
     private double[][] copyPoints(double[][] pts) {
         double[][] cp = new double[pts.length][2];
         for (int i = 0; i < pts.length; i++) {
