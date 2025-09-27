@@ -2,10 +2,8 @@ package org.example;
 public final class Metrics {
     private long time = 0;
     private long startTime = 0;
-
     private long comparisons = 0;
     private long allocations = 0;
-
     private int currDepth = 0;
     private int maxDepth = 0;
 
