@@ -1,9 +1,7 @@
 import org.example.Metrics;
 import org.example.algorithms.ClosestPairOfPoints;
-
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.Random;
 
 
@@ -24,7 +22,6 @@ public class ClosestPairTest {
         }
         return min;
     }
-
     @Test
     public void testClosestPairSmall() {
         int[] sizes = {100, 500, 2000};
