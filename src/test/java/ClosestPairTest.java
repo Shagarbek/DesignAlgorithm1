@@ -7,6 +7,7 @@ import java.util.Random;
 public class ClosestPairTest {
     private final Random rnd = new Random(42);
     private double bruteForce(double[][] pts) {
+
         double min = Double.MAX_VALUE;
         for (int i = 0; i < pts.length; i++) {
             for (int j = i + 1; j < pts.length; j++) {

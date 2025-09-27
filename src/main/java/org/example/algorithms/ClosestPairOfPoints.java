@@ -44,6 +44,7 @@ public class ClosestPairOfPoints {
                     minDist = Math.min(minDist, distance(strip.get(i), strip.get(j), metrics));
                 }
             }
+
             return minDist;
         } finally {
             metrics.end();
