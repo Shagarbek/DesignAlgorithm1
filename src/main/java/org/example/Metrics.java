@@ -1,5 +1,4 @@
 package org.example;
-
 public final class Metrics {
     private long time = 0;
     private long startTime = 0;
