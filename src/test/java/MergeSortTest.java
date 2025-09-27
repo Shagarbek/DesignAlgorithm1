@@ -3,10 +3,17 @@ import org.example.algorithms.MergeSort;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
-
+// testing merge sort
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class MergeSortTest {
+    @Test
+    void testLargeArray() {
+        int[] arr = new java.util.Random().ints(1000, 0, 10000).toArray();
+        Metrics m = new Metrics();
+        MergeSort.sort(arr, m);
+        assertTrue(isSorted(arr));
+    }
 
     @Test
     void testSmallArray() {
@@ -16,13 +23,6 @@ class MergeSortTest {
         assertTrue(isSorted(arr));
     }
 
-    @Test
-    void testLargeArray() {
-        int[] arr = new java.util.Random().ints(1000, 0, 10000).toArray();
-        Metrics m = new Metrics();
-        MergeSort.sort(arr, m);
-        assertTrue(isSorted(arr));
-    }
 
     private boolean isSorted(int[] arr) {
         for (int i = 1; i < arr.length; i++) {

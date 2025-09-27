@@ -1,11 +1,8 @@
 package org.example.algorithms;
-
 import org.example.Metrics;
-
+// mergesort
 public final class MergeSort {
-
     private MergeSort() {}
-
     public static void sort(int[] arr, Metrics metrics) {
         int[] buf = new int[arr.length];
         metrics.incAlloc(arr.length);
@@ -53,7 +50,6 @@ public final class MergeSort {
             buf[t] = arr[t];
             metrics.incAlloc(1);
         }
-
         int i = l, j = mid + 1, k = l;
         while (i <= mid && j <= r) {
             metrics.incComparisons(1);
