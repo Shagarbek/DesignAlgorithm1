@@ -1,6 +1,5 @@
 package org.example.algorithms;
 import org.example.Metrics;
-
 import java.util.*;
 
 public class ClosestPairOfPoints {
