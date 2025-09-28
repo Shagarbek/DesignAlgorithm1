@@ -1,4 +1,4 @@
-package org.example;
+package org.example.benchmark;
 
 import org.example.algorithms.DeterministicSelect;
 import org.openjdk.jmh.annotations.*;
