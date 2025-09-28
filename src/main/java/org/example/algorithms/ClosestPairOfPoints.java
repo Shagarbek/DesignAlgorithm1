@@ -12,7 +12,6 @@ public class ClosestPairOfPoints {
     }
     private static double minDistUtil(double[][] points, int left, int right, Metrics metrics) {
         metrics.start();
-
         try {
             int n = right - left;
             if (n <= 3) {
