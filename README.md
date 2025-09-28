@@ -59,12 +59,16 @@ Metrics are tracked in a `Metrics` class:
 
 ## Plots
 ### 1. Time vs Input Size
-![Time vs Input Size](<img width="610" height="430" alt="image" src="https://github.com/user-attachments/assets/e127eec8-720e-4cba-9904-a5093d156114" />)  
+![Time vs Input Size](<img width="610" height="430" alt="image" src="https://github.com/user-attachments/assets/87c971f3-f645-44ec-aeac-b7c4b4d91688" />
+
+)  
 
 ---
 
 ### 2. Comparisons vs Input Size
-![Comparisons vs Input Size](<img width="1453" height="843" alt="image" src="https://github.com/user-attachments/assets/6f1f2538-3d34-4bef-9680-ab74296f383b" />)  
+![Comparisons vs Input Size](<img width="1453" height="843" alt="image" src="https://github.com/user-attachments/assets/44c87322-a5e8-4e38-ae5c-b5842c4effdc" />
+
+)  
 
 ---
 
@@ -75,7 +79,8 @@ Metrics are tracked in a `Metrics` class:
 ---
 
 ### 4. Max Recursion Depth vs Input Size
-![Max Recursion Depth vs Input Size](<img width="610" height="430" alt="image" src="https://github.com/user-attachments/assets/9e8b6f9a-dcf9-469c-87e7-1059133e7bc2" />
+![Max Recursion Depth vs Input Size](<img width="610" height="430" alt="image" src="https://github.com/user-attachments/assets/9e8b6f9a-dcf9-469c-87e7-1059133e7bc2" /> 
+
 )  
 
 # Summary
