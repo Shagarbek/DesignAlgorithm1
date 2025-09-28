@@ -42,6 +42,7 @@ public class ClosestPairTest {
         double fast = ClosestPairOfPoints.minDistance(copyPoints(pts), m);
         assertTrue(Double.isFinite(fast) && fast >= 0, "Closest distance should be non-negative finite");
     }
+
     private double[][] randomPoints(int n) {
         double[][] pts = new double[n][2];
         for (int i = 0; i < n; i++) {
