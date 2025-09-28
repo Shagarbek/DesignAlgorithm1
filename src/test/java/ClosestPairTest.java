@@ -1,14 +1,13 @@
 import org.example.Metrics;
 import org.example.algorithms.ClosestPairOfPoints;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
+import static org.junit.jupiter.api.Assertions.*;
 import java.util.Random;
 
 
 public class ClosestPairTest {
     private final Random rnd = new Random(42);
-
     private double bruteForce(double[][] pts) {
         double min = Double.MAX_VALUE;
         for (int i = 0; i < pts.length; i++) {
