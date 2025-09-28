@@ -10,7 +10,6 @@ public class ClosestPairOfPoints {
         return Math.sqrt((p1[0] - p2[0]) * (p1[0] - p2[0]) +
                 (p1[1] - p2[1]) * (p1[1] - p2[1]));
     }
-
     private static double minDistUtil(double[][] points, int left, int right, Metrics metrics) {
         metrics.start();
 

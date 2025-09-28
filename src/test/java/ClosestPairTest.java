@@ -8,11 +8,9 @@ import java.util.Random;
 public class ClosestPairTest {
     private final Random rnd = new Random(42);
     private double bruteForce(double[][] pts) {
-
         double min = Double.MAX_VALUE;
         for (int i = 0; i < pts.length; i++) {
             for (int j = i + 1; j < pts.length; j++) {
-
                 double dx = pts[i][0] - pts[j][0];
                 double dy = pts[i][1] - pts[j][1];
                 double d = Math.sqrt(dx * dx + dy * dy);
